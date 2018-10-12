@@ -11,20 +11,20 @@ function calcolo(){
           if(totale<20,1){
           document.getElementById('spiegazione').innerHTML="Sottopeso"
           }
-          else if(totale<20,1){
+          else if(totale<25){
           document.getElementById('spiegazione').innerHTML="Peso ottimale"
           }
-           else if(totale<20,1){
+           else if(totale<29.9){
           document.getElementById('spiegazione').innerHTML="Sovrappeso"
           }
-          else if(totale<20,1){
+          else if(totale<35){
           document.getElementById('spiegazione').innerHTML="Obesità di I grado"
           }
-          else if(totale<20,1){
+          else if(totale<40){
           document.getElementById('spiegazione').innerHTML="Obesità di II grado"
           }
-          else if{
-          document.getElementById('spiegazione').innerHTML="Obesità di alto grado"
+          else{
+          document.getElementById('spiegazione').innerHTML="Obesità grave"
           }
 	}
     else if(sesso="f"){
@@ -32,11 +32,24 @@ function calcolo(){
 	document.getElementById('calcola').innerHTML="BMI ="+totale;
           if(totale<18,7){
           document.getelementById('spiegazione').innerHTML='Sottopeso'
-       }
+          }
+          else if(totale<23.8){
+          document.getElementById('spiegazione').innerHTML="Peso ottimale"
+          }
+          else if(totale<28.6){
+          document.getElementById('spiegazione').innerHTML="Peso ottimale"
+          }
+          else if(totale<35){
+          document.getElementById('spiegazione').innerHTML="Peso ottimale"
+          }
+          else if(totale<40){
+          document.getElementById('spiegazione').innerHTML="Peso ottimale"
+          }
+          else{
+          document.getElementById('spiegazione').innerHTML="Obesità grave"
+          }
 	}
-}
-
-  function cancella(){
+    function cancella(){
     document.getElementById('calcola').innerHTML=" "; 
+    document.getElementById('spiegazione').innerHTML=" "; 
   }
-
